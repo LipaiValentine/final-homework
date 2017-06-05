@@ -1260,13 +1260,13 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
-	<script src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
-	<script src="js/common.js"></script>
+	<!-- <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/main.min.css"> -->
+	<script onload src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script onload src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script onload src="js/jquery.validate.min.js"></script>
+	<script onload src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script onload src="js/common.js"></script>
 	<script>
 		$(document).ready(function(){
 			var showButton = $('.show-items');
@@ -1278,6 +1278,8 @@
 			var hide_menu= $('.menu a');
 			var searchInput = $('.header__search a');
 
+			$("head").append("<link rel='stylesheet' href='libs/font-awesome/css/font-awesome.min.css'>");
+			$("head").append("<link rel='stylesheet' href='css/main.min.css'>");
 
 			link.click(function(){
 				link.toggleClass('menu-link__active');
